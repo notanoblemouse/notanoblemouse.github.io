@@ -53,3 +53,9 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+exclude:
+  - venv/
+  - .env
+  - test_connection.py
+  - publish_anji.py
+  - raw_images/

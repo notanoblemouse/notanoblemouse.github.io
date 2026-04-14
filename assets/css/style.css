@@ -1,0 +1,32 @@
+body { font-family: 'Pretendard', sans-serif; background-color: #fafafa; margin: 0; padding: 20px; }
+header { padding: 40px 0; border-bottom: 1px solid #dbdbdb; margin-bottom: 30px; }
+header h1 a { text-decoration: none; color: #262626; font-weight: 800; letter-spacing: -1px; }
+
+.instagram-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3열 유지 */
+    gap: 20px;
+    max-width: 935px; /* 인스타그램 표준 너비 */
+    margin: 0 auto;
+}
+
+.grid-item {
+    background: #fff;
+    border: 1px solid #dbdbdb;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+}
+
+.grid-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 이미지가 꽉 차게 */
+    transition: transform 0.3s ease;
+}
+
+.grid-item img:hover {
+    transform: scale(1.05); /* 마우스 올리면 살짝 확대 */
+}
+
+/* "No Image" 박스 숨기기 (선택) */
+.no-image { display: none; }

@@ -1,0 +1,16 @@
+---
+layout: default
+---
+<div class="instagram-grid">
+  {% for post in site.posts %}
+    <div class="grid-item">
+      <a href="{{ post.url }}">
+        {% if post.cover_image %}
+          <img src="{{ post.cover_image }}" alt="{{ post.title }}">
+        {% else %}
+          <div class="no-image">No Image</div>
+        {% endif %}
+      </a>
+    </div>
+  {% endfor %}
+</div>
